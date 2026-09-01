@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMessages();
   initCourses();
   initTimeline();
-  initGallery();
-  initLightbox();
   initMagnetic();
   initTilt();
   initContactForm();
@@ -45,7 +43,7 @@ function initCursor() {
   }
   animateRing();
 
-  const interactives = 'a, button, .course-card__head, .gallery-item, .timeline__step, .infra-tile';
+  const interactives = 'a, button, .course-card__head, .timeline__step, .infra-card';
   document.querySelectorAll(interactives).forEach((el) => {
     el.addEventListener('mouseenter', () => ring.classList.add('hover'));
     el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
@@ -221,53 +219,6 @@ function initTimeline() {
       if (stepIndex !== activeIndex) setActive(stepIndex);
     }
   }, { passive: true });
-}
-
-/* ---- Gallery Filter ---- */
-function initGallery() {
-  const btns = document.querySelectorAll('.gallery-filter__btn');
-  const images = document.getElementById('gallery-images');
-  const videos = document.getElementById('gallery-videos');
-
-  btns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      btns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      const showImages = btn.dataset.filter === 'images';
-      images.classList.toggle('hidden', !showImages);
-      videos.classList.toggle('hidden', showImages);
-    });
-  });
-}
-
-/* ---- Lightbox ---- */
-function initLightbox() {
-  const lightbox = document.getElementById('lightbox');
-  const content = lightbox.querySelector('.lightbox__content');
-  const close = lightbox.querySelector('.lightbox__close');
-
-  document.querySelectorAll('[data-lightbox]').forEach((item) => {
-    item.addEventListener('click', () => {
-      const media = item.querySelector('.gallery-item__media');
-      const label = item.querySelector('figcaption')?.textContent || '';
-      content.innerHTML = `<div style="width:min(80vw,700px);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:${getComputedStyle(media).background};border-radius:16px;font-family:Syne,sans-serif;font-size:1.5rem;font-weight:700;color:#fff">${label}</div>`;
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-    });
-  });
-
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden', 'true');
-  }
-
-  close.addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
-  });
 }
 
 /* ---- Magnetic Buttons ---- */
