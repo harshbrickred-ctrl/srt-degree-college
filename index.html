@@ -3,171 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SRT Degree College — Quality undergraduate education in Commerce and Arts. College Code: 1290.">
   <title>SRT Degree College | College Code 1290</title>
+  <meta name="description" content="SRT Degree College — Quality undergraduate education in Commerce and Arts. College Code: 1290.">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div class="scroll-progress" id="scroll-progress"></div>
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="#home" class="brand">
-        <span class="brand__logo-wrap">
-          <img src="images/logo.png" alt="" class="brand__logo" width="44" height="44">
-        </span>
-        <span class="brand__text">
-          <span class="brand__name">SRT Degree College</span>
-          <span class="brand__code">Code 1290</span>
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="images/logo.png" alt="" width="44" height="44">
+        <span class="brand-copy">
+          <p class="brand-name">SRT Degree College</p>
+          <p class="brand-tag">College Code 1290</p>
         </span>
       </a>
-
-      <nav class="nav-desktop">
-        <a href="#about" class="nav-link" data-section="about">About</a>
-        <a href="#programmes" class="nav-link" data-section="programmes">Programmes</a>
-        <a href="#infrastructure" class="nav-link" data-section="infrastructure">Campus</a>
-        <a href="#notices" class="nav-link" data-section="notices">Notices</a>
-        <a href="#contact" class="nav-link nav-link--cta" data-section="contact">Contact</a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#programmes">Programmes</a>
+        <a class="nav-link" href="#campus">Campus</a>
+        <a class="nav-link" href="#notices">Notices</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
-
-      <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <div class="header-actions">
+        <a class="btn btn-accent btn-sm desktop-cta" href="admissions.html">Admissions Open</a>
+        <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="mobile-nav" data-mobile-nav>
+      <div class="nav-mobile-inner">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#programmes">Programmes</a>
+        <a class="nav-link" href="#prospectus">Prospectus</a>
+        <a class="nav-link" href="#campus">Campus</a>
+        <a class="nav-link" href="#notices">Notices</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-accent btn-block" href="admissions.html">Admissions Open</a>
+      </div>
     </div>
   </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
-    <nav class="menu-overlay__nav">
-      <a href="#home" class="menu-link">Home</a>
-      <a href="#about" class="menu-link">About Us</a>
-      <a href="#programmes" class="menu-link">Programmes</a>
-      <a href="#prospectus" class="menu-link">Prospectus</a>
-      <a href="#infrastructure" class="menu-link">Infrastructure</a>
-      <a href="#admission" class="menu-link">Admission</a>
-      <a href="#notices" class="menu-link">Notices</a>
-      <a href="#contact" class="menu-link">Contact</a>
-    </nav>
-    <div class="menu-overlay__footer">
-      <a href="tel:+917030604665" class="menu-overlay__phone">+91 70306 04665</a>
-      <p>Educate · Empower · Excel</p>
-    </div>
-  </div>
-
   <main>
-    <!-- Hero -->
     <section class="hero" id="home">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-
-      <div class="wrap hero__layout">
-        <div class="hero__copy">
-          <div class="hero__meta">
-            <span class="pill">College Code 1290</span>
-            <span class="pill pill--outline">Admissions Open 2026–27</span>
-          </div>
-
-          <h1 class="hero__title">
-            <span class="line"><span class="word">Shape</span></span>
-            <span class="line"><span class="word">Your</span> <span class="word word--accent">Future</span></span>
-            <span class="line line--sub">at SRT Degree College</span>
-          </h1>
-
-          <p class="hero__desc">Undergraduate programmes in Commerce &amp; Arts — built for careers, character, and community.</p>
-
-          <div class="hero__actions">
-            <a href="#admission" class="btn btn--gold magnetic">
-              <span>Apply Now</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1920" alt="College campus building">
+      </div>
+      <div class="hero-shade"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/></svg>
+            College Code 1290
+          </p>
+          <h1>Shape Your <span class="gradient-text">Future.</span></h1>
+          <p class="hero-copy">Undergraduate programmes in Commerce &amp; Arts — built for careers, character, and community. Educate · Empower · Excel.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent btn-lg" href="admissions.html">Apply Now
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a href="#programmes" class="btn btn--ghost magnetic">Explore Courses</a>
-          </div>
-
-          <div class="hero__stats">
-            <div class="stat">
-              <span class="stat__num" data-count="3">0</span>
-              <span class="stat__label">UG Programmes</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num" data-count="6">0</span>
-              <span class="stat__label">Facilities</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num" data-count="1290">0</span>
-              <span class="stat__label">College Code</span>
-            </div>
+            <a class="btn btn-outline btn-lg" href="#programmes">Explore Courses</a>
           </div>
         </div>
-
-        <div class="hero__visual">
-          <div class="hero__logo-frame">
-            <div class="hero__logo-ring"></div>
-            <img src="images/logo.png" alt="SRT Degree College" class="hero__logo" width="280" height="280">
+        <div class="stat-panel">
+          <div class="stat-panel-glow"></div>
+          <div class="stat-panel-card">
+            <div class="mini-stats">
+              <div class="mini-stat"><strong>3</strong><span>UG Programmes</span></div>
+              <div class="mini-stat"><strong>6</strong><span>Facilities</span></div>
+              <div class="mini-stat"><strong>1290</strong><span>College Code</span></div>
+              <div class="mini-stat"><em class="mini-motto">Educate · Empower · Excel</em><span>Motto</span></div>
+            </div>
           </div>
-          <p class="hero__motto">Educate · Empower · Excel</p>
         </div>
       </div>
-
-      <a href="#about" class="hero__scroll-hint" aria-label="Scroll down">
-        <span>Scroll</span>
-        <div class="hero__scroll-bar"></div>
-      </a>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span></span></a>
     </section>
 
-    <!-- Notice Ticker -->
-    <div class="ticker" aria-label="Latest notices">
-      <div class="ticker__label">Latest</div>
-      <div class="ticker__track">
-        <div class="ticker__content">
-          <span>Admission Open for 2026–27 — B.Com, B.A.F &amp; B.A</span>
-          <span class="ticker__dot">◆</span>
-          <span>College Reopening — New Academic Session</span>
-          <span class="ticker__dot">◆</span>
-          <span>Examination Schedule Published</span>
-          <span class="ticker__dot">◆</span>
-          <span>Call +91 70306 04665 for enquiries</span>
-          <span class="ticker__dot">◆</span>
-        </div>
-        <div class="ticker__content" aria-hidden="true">
-          <span>Admission Open for 2026–27 — B.Com, B.A.F &amp; B.A</span>
-          <span class="ticker__dot">◆</span>
-          <span>College Reopening — New Academic Session</span>
-          <span class="ticker__dot">◆</span>
-          <span>Examination Schedule Published</span>
-          <span class="ticker__dot">◆</span>
-          <span>Call +91 70306 04665 for enquiries</span>
-          <span class="ticker__dot">◆</span>
-        </div>
+    <div class="marquee" aria-label="Latest notices">
+      <div class="marquee-track">
+        <span class="marquee-item"><span class="dot"></span>Admission Open for 2026–27 — B.Com, B.A.F &amp; B.A</span>
+        <span class="marquee-item"><span class="dot"></span>College Reopening — New Academic Session</span>
+        <span class="marquee-item"><span class="dot"></span>Examination Schedule Published</span>
+        <span class="marquee-item"><span class="dot"></span>Call +91 70306 04665 for enquiries</span>
+        <span class="marquee-item"><span class="dot"></span>Admission Open for 2026–27 — B.Com, B.A.F &amp; B.A</span>
+        <span class="marquee-item"><span class="dot"></span>College Reopening — New Academic Session</span>
+        <span class="marquee-item"><span class="dot"></span>Examination Schedule Published</span>
+        <span class="marquee-item"><span class="dot"></span>Call +91 70306 04665 for enquiries</span>
       </div>
     </div>
 
-    <!-- About -->
     <section class="section" id="about">
+      <div class="glow glow-navy"></div>
+      <div class="glow glow-gold"></div>
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="section-num">01</span>
+        <div class="about-intro">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Academic rigour, real-world readiness</h2>
+        </div>
+
+        <div class="stats">
           <div>
-            <h2 class="section-title">About Us</h2>
-            <p class="section-lead">A college committed to academic rigour and real-world readiness.</p>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c2 2 10 2 12 0v-5"/></svg>
+            <p class="stat-value" data-count="3">0</p>
+            <p class="stat-label">UG Programmes</p>
+          </div>
+          <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            <p class="stat-value" data-count="6">0</p>
+            <p class="stat-label">Facilities</p>
+          </div>
+          <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l2.2 4.6L19 8.2l-3.4 3.3.8 4.8L12 14.8 7.6 16.3l.8-4.8L5 8.2l4.8-.6L12 3z"/></svg>
+            <p class="stat-value" data-count="1290">0</p>
+            <p class="stat-label">College Code</p>
           </div>
         </div>
 
-        <div class="bento bento--about">
-          <article class="bento__cell bento__cell--wide reveal">
-            <h3>College Information</h3>
-            <p>SRT Degree College offers affiliated undergraduate programmes in Commerce and Arts. We prepare students for meaningful careers through quality teaching, modern infrastructure, and a culture of integrity.</p>
+        <div class="about-grid">
+          <article class="about-card about-card--large">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1200" alt="College library reading room">
+            <div class="about-card-shade"></div>
+            <div class="about-card-body">
+              <h3>College Information</h3>
+              <p>SRT Degree College offers affiliated undergraduate programmes in Commerce and Arts. We prepare students for meaningful careers through quality teaching, modern infrastructure, and a culture of integrity.</p>
+            </div>
           </article>
-
-          <article class="bento__cell bento__cell--accent reveal">
-            <span class="bento__tag">Our Promise</span>
+          <article class="copy-card copy-card--navy">
+            <p class="card-tag">Our Promise</p>
+            <h3>What students can expect</h3>
             <ul class="check-list">
               <li>Affiliated UG programmes</li>
               <li>Experienced faculty</li>
@@ -175,159 +144,176 @@
               <li>Holistic development</li>
             </ul>
           </article>
-
-          <article class="bento__cell bento__cell--vision reveal">
-            <span class="bento__tag bento__tag--vision">Vision Statement</span>
+          <article class="copy-card">
+            <p class="card-tag">Vision Statement</p>
+            <h3>Vision</h3>
             <p>SRT Degree College strives to empower students with knowledge, skills, values, and a sense of responsibility, enabling them to become competent, confident, ethical, and socially responsible citizens who contribute meaningfully to society and the nation.</p>
           </article>
-
-          <article class="bento__cell bento__cell--mission reveal">
-            <span class="bento__tag bento__tag--mission">Mission Statement</span>
+          <article class="copy-card">
+            <p class="card-tag">Mission Statement</p>
+            <h3>Mission</h3>
             <p>Our mission is to provide quality and inclusive education that develops intellectual abilities, practical skills, creativity, ethical values, and social responsibility among students.</p>
           </article>
+        </div>
 
-          <article class="bento__cell bento__cell--messages reveal">
-            <div class="message-switch">
-              <button class="message-switch__btn active" data-message="principal">Principal</button>
-              <button class="message-switch__btn" data-message="founder">Founder</button>
-            </div>
-            <div class="message-panel active" id="msg-principal">
-              <blockquote>
-                <p>"Welcome to SRT Degree College. Our mission is to nurture young minds through quality education and values — creating an inclusive environment where every student reaches their full potential."</p>
-                <footer>— Principal, SRT Degree College</footer>
-              </blockquote>
-            </div>
-            <div class="message-panel" id="msg-founder">
-              <blockquote>
-                <p>"We founded this college to make higher education accessible and meaningful — empowering students with knowledge, skills, and character to excel in their chosen fields."</p>
-                <footer>— Founder, SRT Degree College</footer>
-              </blockquote>
-            </div>
-          </article>
+        <div class="message-block" data-messages>
+          <div class="message-switch" role="tablist" aria-label="Messages">
+            <button type="button" class="is-active" role="tab" aria-selected="true" data-message="principal">Principal</button>
+            <button type="button" role="tab" aria-selected="false" data-message="founder">Founder</button>
+          </div>
+          <div class="message-panel is-active" data-message-panel="principal">
+            <blockquote>
+              <p>"Welcome to SRT Degree College. Our mission is to nurture young minds through quality education and values — creating an inclusive environment where every student reaches their full potential."</p>
+              <footer>— Principal, SRT Degree College</footer>
+            </blockquote>
+          </div>
+          <div class="message-panel" data-message-panel="founder">
+            <blockquote>
+              <p>"We founded this college to make higher education accessible and meaningful — empowering students with knowledge, skills, and character to excel in their chosen fields."</p>
+              <footer>— Founder, SRT Degree College</footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Programmes -->
-    <section class="section section--dark" id="programmes">
+    <section class="section" id="programmes">
       <div class="wrap">
-        <div class="section-head section-head--light reveal">
-          <span class="section-num">02</span>
-          <div>
-            <h2 class="section-title">Programmes</h2>
-            <p class="section-lead">Undergraduate courses designed for today's economy.</p>
-          </div>
+        <div class="center">
+          <p class="section-label">Programmes</p>
+          <h2 class="section-title">Undergraduate courses</h2>
+          <p class="lead">Undergraduate courses designed for today's economy.</p>
         </div>
-
-        <div class="courses">
-          <article class="course-card reveal" data-course>
-            <button class="course-card__head" aria-expanded="false">
-              <span class="course-card__dept">Commerce</span>
-              <span class="course-card__name">B.Com</span>
-              <span class="course-card__full">Bachelor of Commerce</span>
-              <span class="course-card__toggle" aria-hidden="true"></span>
-            </button>
-            <div class="course-card__body">
+        <div data-tabs>
+          <div class="tabs" role="tablist" aria-label="Undergraduate programmes">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="bcom">B.Com</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tab="baf">B.A.F</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tab="ba">B.A</button>
+          </div>
+          <article class="panel is-active" data-panel="bcom">
+            <div class="panel-head tone-navy">
+              <div class="panel-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <p class="card-tag" style="margin:0;">Commerce</p>
+                <h3>B.Com — Bachelor of Commerce</h3>
+              </div>
+            </div>
+            <div class="panel-body">
               <p>Comprehensive training in accounting, finance, taxation, and business management — preparing graduates for corporate careers and entrepreneurship.</p>
-              <span class="course-card__badge">Undergraduate</span>
+              <div class="chips"><span class="chip">Undergraduate</span><span class="chip">Commerce</span></div>
             </div>
           </article>
-
-          <article class="course-card reveal" data-course>
-            <button class="course-card__head" aria-expanded="false">
-              <span class="course-card__dept">Commerce</span>
-              <span class="course-card__name">B.A.F</span>
-              <span class="course-card__full">Bachelor of Accounting &amp; Finance</span>
-              <span class="course-card__toggle" aria-hidden="true"></span>
-            </button>
-            <div class="course-card__body">
+          <article class="panel" data-panel="baf">
+            <div class="panel-head tone-gold">
+              <div class="panel-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div>
+                <p class="card-tag" style="margin:0;color:#0c1a2e;">Commerce</p>
+                <h3>B.A.F — Bachelor of Accounting &amp; Finance</h3>
+              </div>
+            </div>
+            <div class="panel-body">
               <p>Specialized programme in financial accounting, auditing, and financial analysis — ideal for students targeting careers in banking and finance.</p>
-              <span class="course-card__badge">Undergraduate</span>
+              <div class="chips"><span class="chip">Undergraduate</span><span class="chip">Commerce</span></div>
             </div>
           </article>
-
-          <article class="course-card reveal" data-course>
-            <button class="course-card__head" aria-expanded="false">
-              <span class="course-card__dept">Arts</span>
-              <span class="course-card__name">B.A</span>
-              <span class="course-card__full">Bachelor of Arts</span>
-              <span class="course-card__toggle" aria-hidden="true"></span>
-            </button>
-            <div class="course-card__body">
+          <article class="panel" data-panel="ba">
+            <div class="panel-head tone-slate">
+              <div class="panel-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              </div>
+              <div>
+                <p class="card-tag" style="margin:0;">Arts</p>
+                <h3>B.A — Bachelor of Arts</h3>
+              </div>
+            </div>
+            <div class="panel-body">
               <p>A diverse liberal arts programme covering humanities, social sciences, and critical thinking — building versatile graduates for multiple career paths.</p>
-              <span class="course-card__badge">Undergraduate</span>
+              <div class="chips"><span class="chip">Undergraduate</span><span class="chip">Arts</span></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Prospectus -->
     <section class="prospectus" id="prospectus">
-      <div class="wrap prospectus__inner reveal">
-        <div class="prospectus__text">
-          <span class="section-num section-num--light">03</span>
-          <h2>Download the<br>College Prospectus</h2>
-          <p>Programmes, fees, admission process, and campus details — everything in one document.</p>
+      <div class="wrap prospectus-inner">
+        <div>
+          <p class="prospectus-kicker">Prospectus</p>
+          <h2>Download the College Prospectus</h2>
+          <p class="prospectus-copy">Programmes, fees, admission process, and campus details — everything in one document.</p>
         </div>
-        <a href="#" class="btn btn--white btn--lg magnetic" id="prospectus-download">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 10v6m0 0l-3-3m3 3l3-3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2h-5l-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          <span>Get Prospectus</span>
-        </a>
+        <button class="btn btn-navy btn-lg" type="button" data-prospectus>Get Prospectus</button>
+        <p class="notice notice-ok" data-prospectus-note>Prospectus PDF coming soon. Call +91 70306 04665 for programme and fee details.</p>
       </div>
     </section>
 
-    <!-- Infrastructure -->
-    <section class="section" id="infrastructure">
+    <section class="section" id="campus">
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="section-num">04</span>
-          <div>
-            <h2 class="section-title">Infrastructure</h2>
-            <p class="section-lead">Spaces built for learning, collaboration, and growth.</p>
-          </div>
-        </div>
-
-        <div class="infra-grid">
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">01</span>
-              <h4>Computer Lab</h4>
+        <p class="section-label">Campus</p>
+        <h2 class="section-title">Infrastructure</h2>
+        <p class="lead" style="margin-left:0;">Spaces built for learning, collaboration, and growth.</p>
+        <div class="cards" style="margin-top: 3rem;">
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="Computers in a lab">
+              <span class="badge">01</span>
+            </div>
+            <div class="event-body">
+              <h3>Computer Lab</h3>
               <p>High-speed internet, modern systems, and hands-on digital learning.</p>
             </div>
           </article>
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">02</span>
-              <h4>AV Room</h4>
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="Presentation in a seminar room">
+              <span class="badge">02</span>
+            </div>
+            <div class="event-body">
+              <h3>AV Room</h3>
               <p>Seminars, presentations, and interactive sessions.</p>
             </div>
           </article>
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">03</span>
-              <h4>Classrooms</h4>
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="Lecture in a classroom">
+              <span class="badge">03</span>
+            </div>
+            <div class="event-body">
+              <h3>Classrooms</h3>
               <p>Spacious, ventilated rooms for focused study.</p>
             </div>
           </article>
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">04</span>
-              <h4>Library</h4>
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="Library bookshelves">
+              <span class="badge">04</span>
+            </div>
+            <div class="event-body">
+              <h3>Library</h3>
               <p>Books, journals, and digital resources for research and reference.</p>
             </div>
           </article>
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">05</span>
-              <h4>Campus</h4>
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="College grounds and lawn">
+              <span class="badge">05</span>
+            </div>
+            <div class="event-body">
+              <h3>Campus</h3>
               <p>Green, serene environment for academic focus.</p>
             </div>
           </article>
-          <article class="infra-card reveal" data-tilt>
-            <div class="infra-card__body">
-              <span class="infra-card__num">06</span>
-              <h4>More Facilities</h4>
+          <article class="event-card">
+            <div class="event-media">
+              <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=900" alt="Students on a sports field">
+              <span class="badge">06</span>
+            </div>
+            <div class="event-body">
+              <h3>More Facilities</h3>
               <p>Sports, cafeteria, and student support services.</p>
             </div>
           </article>
@@ -335,197 +321,206 @@
       </div>
     </section>
 
-    <!-- Admission -->
-    <section class="section section--cream" id="admission">
+    <section class="section gallery" id="gallery">
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="section-num">05</span>
-          <div>
-            <h2 class="section-title">Admission</h2>
-            <p class="section-lead">Four simple steps to join SRT Degree College.</p>
-          </div>
+        <div class="center">
+          <p class="section-label">Gallery</p>
+          <h2 class="section-title">Campus Moments</h2>
+          <p class="lead">Placeholder photographs of college spaces. These will be replaced with pictures from the Virar campus.</p>
         </div>
-
-        <div class="admission-layout">
-          <div class="timeline reveal">
-            <div class="timeline__line"><div class="timeline__progress" id="timeline-progress"></div></div>
-            <div class="timeline__step active" data-step="0">
-              <span class="timeline__dot"></span>
-              <div>
-                <strong>Choose Programme</strong>
-                <p>Select B.Com, B.A.F, or B.A based on your goals.</p>
-              </div>
-            </div>
-            <div class="timeline__step" data-step="1">
-              <span class="timeline__dot"></span>
-              <div>
-                <strong>Apply Online</strong>
-                <p>Fill the admission form with your details.</p>
-              </div>
-            </div>
-            <div class="timeline__step" data-step="2">
-              <span class="timeline__dot"></span>
-              <div>
-                <strong>Submit Documents</strong>
-                <p>Upload mark sheets, certificates, and ID proof.</p>
-              </div>
-            </div>
-            <div class="timeline__step" data-step="3">
-              <span class="timeline__dot"></span>
-              <div>
-                <strong>Get Confirmed</strong>
-                <p>Receive admission confirmation after verification.</p>
-              </div>
-            </div>
+        <div class="masonry" style="margin-top: 3rem;">
+          <button class="shot" type="button" data-shot data-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1400" data-title="Working together" data-description="A placeholder photograph. The college gallery will use pictures from the Virar campus.">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=800" alt="Students working together">
+            <span class="shot-meta"><p>Working together</p></span>
+          </button>
+          <button class="shot" type="button" data-shot data-src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1400" data-title="Study group" data-description="Students working together. This image stands in until a campus photograph is added.">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=800" alt="Students studying together">
+            <span class="shot-meta"><p>Study group</p></span>
+          </button>
+          <button class="shot" type="button" data-shot data-src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1400" data-title="Open books" data-description="Reading and reference. Replace this frame with a photograph of the college library.">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=800" alt="Open books on a desk">
+            <span class="shot-meta"><p>Open books</p></span>
+          </button>
+          <button class="shot" type="button" data-shot data-src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1400" data-title="College hall" data-description="A university hall used as a placeholder for the college building.">
+            <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=800" alt="University building exterior">
+            <span class="shot-meta"><p>College hall</p></span>
+          </button>
+          <button class="shot" type="button" data-shot data-src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1400" data-title="Between classes" data-description="Students crossing a campus. Swap in a photograph from Gopcharpada when one is ready.">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=800" alt="Students walking between classes">
+            <span class="shot-meta"><p>Between classes</p></span>
+          </button>
+        </div>
+      </div>
+      <div class="lightbox" data-lightbox>
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div class="lightbox-card">
+          <img alt="">
+          <div>
+            <h3 data-lightbox-title></h3>
+            <p data-lightbox-description></p>
           </div>
-
-          <aside class="admission-card reveal">
-            <div class="admission-card__header">
-              <span class="pill pill--dark">UG Courses</span>
-              <h3>Online Admission</h3>
-            </div>
-            <ul class="admission-card__list">
-              <li>B.Com — Bachelor of Commerce</li>
-              <li>B.A.F — Bachelor of Accounting &amp; Finance</li>
-              <li>B.A — Bachelor of Arts</li>
-            </ul>
-            <a href="#contact" class="btn btn--gold btn--full magnetic">Start Application</a>
-            <p class="admission-card__help">Questions? Call <a href="tel:+917030604665">+91 70306 04665</a></p>
-          </aside>
         </div>
       </div>
     </section>
 
-    <!-- Notices -->
-    <section class="section section--dark" id="notices">
+    <section class="section" id="notices">
       <div class="wrap">
-        <div class="section-head section-head--light reveal">
-          <span class="section-num">06</span>
-          <div>
-            <h2 class="section-title">Notices &amp; Circulars</h2>
-            <p class="section-lead">Official announcements from the college.</p>
-          </div>
+        <div class="center">
+          <p class="section-label">Notices &amp; Circulars</p>
+          <h2 class="section-title">Official announcements</h2>
+          <p class="lead">Official announcements from the college.</p>
         </div>
-
-        <div class="notices-grid">
-          <article class="notice reveal">
-            <time datetime="2026-06-01">01<span>Jun</span></time>
-            <div>
-              <h4>Admission Open — Academic Year 2026–27</h4>
-              <p>Online applications open for B.Com, B.A.F, and B.A. Apply before the deadline.</p>
-              <a href="#admission" class="notice__link">View details →</a>
-            </div>
+        <div class="circulars" style="margin-top: 3rem;">
+          <article class="circular">
+            <time datetime="2026-06-01">01<span>Jun 2026</span></time>
+            <h3>Admission Open — Academic Year 2026–27</h3>
+            <p>Online applications open for B.Com, B.A.F, and B.A. Apply before the deadline.</p>
+            <a href="admissions.html">View details</a>
           </article>
-          <article class="notice reveal">
-            <time datetime="2026-05-15">15<span>May</span></time>
-            <div>
-              <h4>College Reopening Notice</h4>
-              <p>New academic session begins as per university schedule. All students to report on time.</p>
-              <a href="#" class="notice__link">Read circular →</a>
-            </div>
+          <article class="circular">
+            <time datetime="2026-05-15">15<span>May 2026</span></time>
+            <h3>College Reopening Notice</h3>
+            <p>New academic session begins as per university schedule. All students to report on time.</p>
           </article>
-          <article class="notice reveal">
-            <time datetime="2026-04-20">20<span>Apr</span></time>
-            <div>
-              <h4>Examination Schedule Published</h4>
-              <p>End-semester timetable available at the office and notice board.</p>
-              <a href="#" class="notice__link">Download PDF →</a>
-            </div>
+          <article class="circular">
+            <time datetime="2026-04-20">20<span>Apr 2026</span></time>
+            <h3>Examination Schedule Published</h3>
+            <p>End-semester timetable available at the office and notice board.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="section" id="contact">
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="section-num">07</span>
-          <div>
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-lead">Reach out for admissions, programmes, or general enquiries.</p>
-          </div>
+        <div class="center">
+          <p class="section-label">Contact Us</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="lead">Reach out for admissions, programmes, or general enquiries.</p>
         </div>
-
-        <div class="contact-layout">
-          <div class="contact-info reveal">
-            <div class="contact-block">
-              <h4>Address</h4>
-              <p>SRT Degree College<br>College Code: 1290<br>Gopcharpada, V.S. Marg, Virar East<br>Maharashtra, India</p>
-              <a href="https://maps.app.goo.gl/mnhYqhk6CWXQ1bFo7?g_st=aw" class="contact-form-link" target="_blank" rel="noopener noreferrer">View on Google Maps →</a>
+        <div class="contact-grid" style="margin-top: 3rem;">
+          <div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div>
+                <span>Address</span>
+                <p>SRT Degree College, College Code 1290, Gopcharpada, V.S. Marg, Virar East, Maharashtra, India</p>
+                <p><a href="https://maps.app.goo.gl/mnhYqhk6CWXQ1bFo7" target="_blank" rel="noopener noreferrer">View on Google Maps</a></p>
+              </div>
             </div>
-            <div class="contact-block">
-              <h4>Phone</h4>
-              <p><a href="tel:+917030604665" class="contact-big">+91 70306 04665</a></p>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+              </div>
+              <div>
+                <span>Phone</span>
+                <p><a href="tel:+917030604665">+91 70306 04665</a></p>
+              </div>
             </div>
-            <div class="contact-block">
-              <h4>Email</h4>
-              <p><a href="mailto:info@srtdegreecollege.edu.in">info@srtdegreecollege.edu.in</a></p>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </div>
+              <div>
+                <span>Email</span>
+                <p><a href="mailto:info@srtdegreecollege.edu.in">info@srtdegreecollege.edu.in</a></p>
+              </div>
             </div>
-            <a href="#" class="contact-form-link" id="google-form-link" target="_blank" rel="noopener">
-              Or use our Google Form →
-            </a>
           </div>
-
-          <form class="contact-form reveal" id="contact-form">
-            <div class="field">
-              <input type="text" id="name" name="name" required placeholder=" ">
-              <label for="name">Full Name</label>
-            </div>
-            <div class="field-row">
+          <form class="form-card" data-enquiry>
+            <p class="notice notice-ok" data-contact-success>Thank you. Your enquiry is noted. Call +91 70306 04665 if you need a reply sooner.</p>
+            <div class="fields fields-2">
               <div class="field">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Email</label>
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" required placeholder="Your name">
               </div>
               <div class="field">
-                <input type="tel" id="phone" name="phone" placeholder=" ">
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com">
+              </div>
+              <div class="field">
                 <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX">
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="Admission Enquiry">Admission Enquiry</option>
+                  <option value="Programme Information">Programme Information</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                </select>
               </div>
             </div>
-            <div class="field">
-              <select id="subject" name="subject">
-                <option value="admission">Admission Enquiry</option>
-                <option value="programme">Programme Information</option>
-                <option value="general">General Enquiry</option>
-              </select>
-              <label for="subject">Subject</label>
+            <div class="field" style="margin-top: 1rem;">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
             </div>
-            <div class="field">
-              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Message</label>
-            </div>
-            <button type="submit" class="btn btn--gold btn--full magnetic">Send Message</button>
+            <button class="btn btn-accent btn-block" style="margin-top: 1.5rem;" type="submit">Send Message</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <div class="footer__brand">
-        <span class="brand__logo-wrap brand__logo-wrap--footer">
-          <img src="images/logo.png" alt="" class="footer__logo" width="72" height="72">
-        </span>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
         <div>
-          <strong>SRT Degree College</strong>
-          <span>College Code 1290 · Educate · Empower · Excel</span>
+          <div class="footer-brand">
+            <img class="footer-logo" src="images/logo.png" alt="" width="44" height="44">
+            <div>
+              <p><strong>SRT Degree College</strong></p>
+              <p class="muted">College Code 1290</p>
+            </div>
+          </div>
+          <p class="fine">Educate · Empower · Excel</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#campus">Campus</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#notices">Notices</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Important</h4>
+          <ul>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="#prospectus">Prospectus</a></li>
+            <li><a href="#about">Principal's Desk</a></li>
+            <li><a href="#notices">Notices &amp; Circulars</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li class="contact-line">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Gopcharpada, V.S. Marg, Virar East, Maharashtra, India</span>
+            </li>
+            <li class="contact-line">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+              <a href="tel:+917030604665">+91 70306 04665</a>
+            </li>
+            <li class="contact-line">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              <a href="mailto:info@srtdegreecollege.edu.in">info@srtdegreecollege.edu.in</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <nav class="footer__nav">
-        <a href="#about">About</a>
-        <a href="#programmes">Programmes</a>
-        <a href="#admission">Admission</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer__meta">
-        <a href="tel:+917030604665">+91 70306 04665</a>
-        <span>&copy; 2026 SRT Degree College</span>
-      </div>
+      <p class="legal">© <span data-year>2026</span> SRT Degree College. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
